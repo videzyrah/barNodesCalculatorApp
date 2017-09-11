@@ -1,1 +1,1 @@
-web: gunicorn flasktutorial1:app
+web: gunicorn multiply:app
