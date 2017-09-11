@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Math - Multiplication Basic</title>
+  <head>
+    <link href="../static/main.css" rel="stylesheet">
+  </head>
+   <body>
+     <div class="container">
+       <h1>Math - Multiplication </h1>
+       <h3>Please enter two numbers to multiply together. </h3>
+       <form action="{{url_for('success')}}" method="POST">
+         <label>x : </label>
+         <input title="Enter first value" placeholder="Enter first value" type="text" maxlength="4" name="factor1" required><br>
+
+         <label>y : </label>
+         <input title="Enter second value" placeholder="Enter second value" type="text" size="10" name="factor2" required><br>
+         <button type="submit" value="Submit"> Multiply! </button>
+       </form>
+
+       <p>Result: {{theSum}}</p>
+     </div>
+   </body>
+</html>
