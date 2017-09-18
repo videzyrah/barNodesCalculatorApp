@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Math - Multiplication Basic</title>
+  <title>Wind Chime Node Finder</title>
   <head>
     <link href="../static/main.css" rel="stylesheet">
   </head>
    <body>
+<!--
      <div class="container">
        <h1>Math - Multiplication </h1>
        <h3>Please enter two numbers to multiply together. </h3>
@@ -18,6 +19,21 @@
        </form>
 
        <p>Result: {{theSum}}</p>
+     </div>
+-->
+     <div class="container">
+       <h1>Wind Chime Node Finder</h1>
+       <h3>Please enter the length of your chime below. </h3>
+       <form action="{{url_for('decInches')}}" method="POST">
+         <label>Inches (whole number) </label>
+         <input title="Inches" placeholder="Inches" type="text" maxlength="4" name="intLength" required><br>
+
+         <label>  16ths of an Inch :  </label>
+         <input title="16ths" placeholder="16ths" type="text" size="10" name="fraxLength" required><br>
+         <button type="submit" value="Submit">Calculate!</button>
+       </form>
+
+       <p>Result:   {{message}}</p>
      </div>
    </body>
 </html>
